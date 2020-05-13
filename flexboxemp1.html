@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: coral;
+    }
+    
+    .container>h1 {
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        flex: 1;
+    }
+    
+    .middlewindow .container {
+        display: flex;
+        flex-flow: row wrap;
+        /* align-items: center center; */
+    }
+    
+    .middlewindow {
+        flex: 1 1 auto;
+    }
+    
+    .rightside {
+        background-color: rgb(84, 4, 212);
+        flex: 0 0 100px;
+    }
+    
+    .leftsidebar {
+        background-color: rgb(4, 59, 59);
+        flex: 0 0 100px;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+    ul {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    
+    li {
+        width: 50px;
+        height: 50px;
+        flex: 1 0 50px;
+        margin: 10px;
+        border: red solid 3px;
+    }
+    
+    .box {
+        width: 200px;
+        height: 250px;
+        padding: 2px;
+        margin: 2px;
+        border-radius: 4px;
+        flex: 1 0 auto;
+    }
+    
+    .box1 {
+        background-color: rgb(180, 25, 129);
+    }
+    
+    .box2 {
+        background-color: rgb(43, 119, 170);
+    }
+    
+    .box3 {
+        background-color: rgb(93, 212, 24)
+    }
+    
+    .box4 {
+        background-color: rgb(177, 42, 93)
+    }
+    
+    .box5 {
+        background-color: rgb(11, 140, 214)
+    }
+</style>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- main -->
+    <div class="container">
+        <h1>main heading</h1>
+    </div>
+    <div class="container">
+        <div class="leftsidebar">
+            <ul>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ul>
+        </div>
+        <div class="middlewindow">
+            <!-- <h1>2</h1> -->
+            <div class="container">
+                <div class="box box1">
+                    <h1>1</h1>
+                </div>
+                <div class="box box2">
+                    <h1>2</h1>
+                </div>
+                <div class="box box3">
+                    <h1>3</h1>
+                </div>
+                <div class="box box4">
+                    <h1>4</h1>
+                </div>
+                <div class="box box5">
+                    <h1>5</h1>
+                </div>
+                <div class="box box4">
+                    <h1>4</h1>
+                </div>
+                <div class="box box5">
+                    <h1>5</h1>
+                </div>
+                <div class="box box1">
+                    <h1>1</h1>
+                </div>
+                <div class="box box2">
+                    <h1>2</h1>
+                </div>
+                <div class="box box3">
+                    <h1>3</h1>
+                </div>
+
+            </div>
+        </div>
+        <div class="rightside">
+            <h1>1</h1>
+        </div>
+
+    </div>
+    <div class="container">
+        <h1>footer</h1>
+    </div>
+
+    <!-- boxes -->
+
+
+
+
+    <script src="" async defer></script>
+</body>
+
+</html>
